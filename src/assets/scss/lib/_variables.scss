@@ -1,0 +1,62 @@
+// COLOR SET
+// --------------------------------
+$bg: #f0f0f0;
+$charc: #333;
+$slate: #424242;
+$chalk: #fdfdfd;
+$trans: rgba(#FFFFFF, 0);
+$white: #fff;
+$black: #000;
+$w: #fff;
+$b: #000;
+$ddgrey: #444;
+$dgrey: #666;
+$mgrey: #8a8a8a;
+$lmgrey: #ddd;
+$lgrey: #cfcfcf;
+$slgrey: #fafafa;
+$rad: #C81E26;
+$fb: #3b5998;
+$tw: #89b1d4;
+$gplus: #dd4b39;
+$yt: #bb0000;
+$vine: #00bf8f;
+$li: #007bb6;
+$inst: #517fa4;
+$pnt: #cb2027;
+$tumblr: #35465c;
+
+$rss: $radNja;
+$linkedin: $li;
+$snapchat: #fffc00;
+$vk: #4c75a3;
+$weibo: #df2029;
+$weixin: #10D21C;
+
+$social: (
+    'twitter': $tw,
+    'facebook': $fb,
+    'instagram': $inst,
+    'mail': $black,
+);
+
+// SITE SIZINGS
+//--------------------------------
+$mw: 1180px;
+$ew: 1300px;
+$wd: $mw - $ew; // difference in container widths
+
+$pad: 30px;
+$section: 60px;
+
+// Font
+$body: 16px;
+
+// Font Weights 
+$light: 300;
+$regular: 400;
+$bold: 600;
+
+// SELECTORS
+//---------------------------------
+$allHeadings: 'h1,h2,h3,h4,h5,h6';
