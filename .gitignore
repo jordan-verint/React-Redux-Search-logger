@@ -68,3 +68,6 @@ dist/
 
 # Jest
 jest_0/
+ 
+#IDE
+.vscode
