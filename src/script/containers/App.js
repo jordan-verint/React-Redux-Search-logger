@@ -18,6 +18,8 @@ class App extends Component{
     formValue(val){
         if (val != null){
             this.props.searcher(val);
+        } else {
+            alert('No Search supplied');
         }
     }
 
