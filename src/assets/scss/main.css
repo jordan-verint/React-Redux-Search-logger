@@ -67,3 +67,11 @@ ul li{
 ul li:nth-of-type(odd){
     background-color: #ececec;
 }
+
+.ohNo{
+    max-width:500px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10em;
+    padding: 0 2em;
+}

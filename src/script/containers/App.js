@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
 
-// Action
+// REDUX --- Action
 import { getSearch } from "../redux/actions/action-search";
-
-// Comp
+// Components
 import FormSearch from '../components/_form';
+// Error Handler 
+import ErrorBoundary from '../util/ErrorBoundary';
 
 class App extends Component{
     constructor(props){
@@ -22,22 +23,24 @@ class App extends Component{
 
     render(){
         return (
-            <div className="container">
-                <h1>Redux simple search logger</h1>
-                <FormSearch 
-                    placeholder='Please Search'
-                    getValue={this.formValue}
-                    clearOnSubmit={true}
-                />
+            <ErrorBoundary>
+                <div className="container">
+                    <h1>Redux simple search logger</h1>
+                    <FormSearch 
+                        placeholder='Please Search'
+                        getValue={this.formValue}
+                        clearOnSubmit={true}
+                    />
 
-                <ul>
-                    {this.props.searchList.map( (item, index) => {
-                        return(
-                            <li key={index}>{item}</li>
-                        );
-                    })}
-                </ul>
-            </div>
+                    <ul>
+                        {this.props.searchList.map( (item, index) => {
+                            return(
+                                <li key={index}>{item}</li>
+                            );
+                        })}
+                    </ul>
+                </div>
+            </ErrorBoundary>
         );
     }
 }
