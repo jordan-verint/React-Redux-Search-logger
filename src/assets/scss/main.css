@@ -75,3 +75,9 @@ ul li:nth-of-type(odd){
     margin-top: 10em;
     padding: 0 2em;
 }
+
+.remove{
+    float: right;
+    cursor: pointer;
+    font-weight: 600;
+}
